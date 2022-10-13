@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(hsl(214deg, 47%, 23%), hsl(237deg, 49%, 15%));
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: #fff;
+}
+
+header {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  border-radius: 15px;
+  border: 3px solid hsl(217deg, 16%, 45%);
+  line-height: 2.5rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  line-height: 1.6rem;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  margin: 2rem;
+  height: 70%;
+  width: 15%;
+  background-color: #fff;
+  color: #000;
+  align-items: center;
+}
+
+.score .text {
+  font-size: 1rem;
+  color: hsl(229deg, 64%, 46%);
+  width: 600;
+}
+
+.score .value {
+  padding: 0.5rem;
+  font-size: 4rem;
+  width: 700;
+  color: hsl(217deg, 16%, 45%);
+}
+
+main {
+  margin: 2rem;
+  background-image: url(/images/bg-triangle.svg);
+  height: 50%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.btn {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  background-color: #fff;
+}
+
+.rock {
+  border: 1rem solid hsl(349deg, 71%, 52%);
+  position: relative;
+  top: 10rem;
+  left: 19rem;
+}
+
+.paper {
+  border: 1rem solid hsl(230deg, 89%, 62%);
+  position: relative;
+  left: 2rem;
+}
+
+.scissors {
+  border: 1rem solid hsl(39deg, 89%, 49%);
+  position: relative;
+  left: 6rem;
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.rules {
+  letter-spacing: 2px;
+  padding: 0.5rem 2rem;
+  border: 0.1rem solid #fff;
+  border-radius: 0.5rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.rules:hover {
+  color: hsl(229deg, 64%, 46%);
+  background-color: #fff;
+}
+
+.attribution {
+  font-size: 0.5rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.modal {
+  height: 25rem;
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal .top {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(229deg, 25%, 31%);
+}
+
+.modal .main-rules {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFRQTs7O0VBR0Usc0JBQUE7RUFDQSxVQUFBO0VBQ0EsU0FBQTtBQ1BGOztBRFNBO0VBQ0UsYUFBQTtFQUNBLG1CQUFBO0VBQ0Esc0JBQUE7RUFDQSwrRUFBQTtFQUNBLDRCQUFBO0VBQ0EsYUFBQTtFQUNBLFlBQUE7RUFDQSxnREFBQTtFQUNBLFdBdEJhO0FDZ0JmOztBRFNBO0VBQ0UsWUFBQTtFQUNBLGFBQUE7RUFDQSw4QkFBQTtFQUNBLG1CQUFBO0VBQ0EsVUFBQTtFQUNBLG1CQUFBO0VBQ0EsdUNBQUE7RUFDQSxtQkFBQTtBQ05GOztBRFNBO0VBQ0UsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsWUFBQTtFQUNBLG1CQUFBO0FDTkY7O0FEU0E7RUFDRSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtFQUNBLFlBQUE7RUFFQSxXQUFBO0VBQ0EsVUFBQTtFQUNBLHNCQW5EYTtFQW9EYixXQUFBO0VBRUEsbUJBQUE7QUNSRjs7QURXQTtFQUNFLGVBQUE7RUFDQSw0QkF6RFk7RUEwRFosVUFBQTtBQ1JGOztBRFVBO0VBQ0UsZUFBQTtFQUNBLGVBQUE7RUFDQSxVQUFBO0VBQ0EsNEJBakVXO0FDMERiOztBRFVBO0VBQ0UsWUFBQTtFQUNBLDhDQUFBO0VBQ0EsV0FBQTtFQUNBLFVBQUE7RUFDQSw0QkFBQTtFQUNBLDJCQUFBO0FDUEY7O0FEVUE7RUFDRSxZQUFBO0VBQ0EsYUFBQTtFQUNBLGdCQUFBO0FDUEY7O0FEU0E7RUFDRSxrQkFBQTtFQUNBLGFBQUE7RUFDQSxZQUFBO0VBQ0Esc0JBdkZhO0FDaUZmOztBRFNBO0VBQ0Usd0NBQUE7RUFDQSxrQkFBQTtFQUNBLFVBQUE7RUFDQSxXQUFBO0FDTkY7O0FEU0E7RUFDRSx3Q0FBQTtFQUNBLGtCQUFBO0VBQ0EsVUFBQTtBQ05GOztBRFNBO0VBQ0UsdUNBQUE7RUFDQSxrQkFBQTtFQUNBLFVBQUE7QUNORjs7QURTQTtFQUNFLGFBQUE7RUFDQSxhQUFBO0VBQ0EsMkJBQUE7RUFDQSw4QkFBQTtFQUNBLFdBQUE7QUNORjs7QURRQTtFQUNFLG1CQUFBO0VBQ0Esb0JBQUE7RUFDQSx5QkFBQTtFQUNBLHFCQUFBO0VBQ0EsZ0RBckhVO0VBc0hWLGdCQUFBO0VBQ0EsV0EzSGE7RUE0SGIsZUFBQTtFQUNBLGVBQUE7QUNMRjs7QURRQTtFQUNFLDRCQS9IWTtFQWdJWixzQkFsSWE7QUM2SGY7O0FEUUE7RUFDRSxpQkFBQTtBQ0xGOztBRFFBO0VBQ0UscUJBQUE7RUFDQSxXQTNJYTtBQ3NJZjs7QURTQTtFQUNFLGFBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsdUJBQUE7RUFDQSxzQkFySmE7RUFzSmIsVUFBQTtFQUNBLGtCQUFBO0VBQ0EsUUFBQTtFQUNBLFNBQUE7RUFDQSxnQ0FBQTtBQ05GOztBRFNBO0VBQ0UsYUFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0EsbUJBQUE7RUFDQSw0QkFoS1U7QUMwSlo7O0FEU0E7RUFDRSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtFQUNBLGFBQUE7QUNORjs7QURTQTtFQUNFLGFBQUE7QUNORiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */

@@ -1,0 +1,178 @@
+//Global
+$background-gradient: hsl(214, 47%, 23%), hsl(237, 49%, 15%);
+$bright-color: #fff;
+$gray-color: hsl(217, 16%, 45%);
+$score-color: hsl(229, 64%, 46%);
+$dark-text: hsl(229, 25%, 31%);
+$main-font: 'Barlow Semi Condensed', sans-serif;
+//Styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient($background-gradient);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: $bright-color;
+}
+
+header {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  border-radius: 15px;
+  border: 3px solid $gray-color;
+  line-height: 2.5rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  line-height: 1.6rem;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  margin: 2rem;
+
+  height: 70%;
+  width: 15%;
+  background-color: $bright-color;
+  color: #000;
+
+  align-items: center;
+}
+
+.score .text {
+  font-size: 1rem;
+  color: $score-color;
+  width: 600;
+}
+.score .value {
+  padding: 0.5rem;
+  font-size: 4rem;
+  width: 700;
+  color: $gray-color;
+}
+
+main {
+  margin: 2rem;
+  background-image: url(/images/bg-triangle.svg);
+  height: 50%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+.btn {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  background-color: $bright-color;
+}
+
+.rock {
+  border: 1rem solid hsl(349, 71%, 52%);
+  position: relative;
+  top: 10rem;
+  left: 19rem;
+}
+
+.paper {
+  border: 1rem solid hsl(230, 89%, 62%);
+  position: relative;
+  left: 2rem;
+}
+
+.scissors {
+  border: 1rem solid hsl(39, 89%, 49%);
+  position: relative;
+  left: 6rem;
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+.rules {
+  letter-spacing: 2px;
+  padding: 0.5rem 2rem;
+  border: 0.1rem solid $bright-color;
+  border-radius: 0.5rem;
+  font-family: $main-font;
+  font-weight: 600;
+  color: $bright-color;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.rules:hover {
+  color: $score-color;
+  background-color: $bright-color;
+}
+
+.attribution {
+  font-size: 0.5rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: $bright-color;
+}
+
+//*Modal wndow
+.modal {
+  height: 25rem;
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $bright-color;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal .top {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: $dark-text;
+}
+
+.modal .main-rules {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
