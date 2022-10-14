@@ -13,6 +13,7 @@ $main-font: 'Barlow Semi Condensed', sans-serif;
   padding: 0;
   margin: 0;
 }
+
 body {
   display: flex;
   align-items: center;
@@ -24,6 +25,8 @@ body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   color: $bright-color;
 }
+
+//*Header style
 
 header {
   margin: 2rem;
@@ -69,6 +72,7 @@ header {
   color: $gray-color;
 }
 
+//* Main style player choose
 main {
   margin: 2rem;
   background-image: url(/images/bg-triangle.svg);
@@ -109,6 +113,7 @@ button {
   left: 6rem;
 }
 
+//* Footer with rules
 footer {
   padding: 2rem;
   display: flex;
@@ -171,6 +176,20 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+}
+
+.close {
+  fill: #3b4262;
+  fill-opacity: 0.25;
+}
+.close:hover {
+  fill-opacity: 0.75;
+  cursor: pointer;
+}
+
+.close:active {
+  fill-opacity: 0.75;
+  cursor: pointer;
 }
 
 .hidden {
